@@ -9,7 +9,21 @@
   <body>
     <h1>HTML Tables</h1>
   
-    <table>
+    <table class="products">
+ <caption>
+    Minimalist food list for the balanced diet
+  </caption>
+      <thead>
+<!-- Рядок заголовків стовпців -->
+      <tr>
+        <th scope="col">Food categories</th>
+        <th scope="col">Quantity in kg</th>
+        <th scope="col">Prise</th>
+      </tr>
+      </thead>
+      
+<tbody>
+ <!-- Основний вміст таблиці -->
       <tr>
        <td>Groceries</td>
   <td>10,1</td>
@@ -40,6 +54,20 @@
         <td>0,3</td>
         <td>10</td>
       </tr>
+</tbody>
+     
+
+<tfoot>
+  <!-- Рядок з підсумками -->
+<tr>
+        <th scope="row">Total price</th>
+        <td></td>
+        <td>919</td>
+      </tr>
+</tfoot>
+
+
+
     </table>
   </body>
 </html>
